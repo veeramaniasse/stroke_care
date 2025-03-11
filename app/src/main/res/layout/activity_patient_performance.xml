@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.simats.strokecare.patient_performance">
+
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/tb"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/lightred">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient Performance"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+</androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#CC373434"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginLeft="30dp"
+            android:text="Day to Day Update">
+
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#CC131313"
+        android:fontFamily="sans-serif-medium"
+        android:layout_gravity="end"
+        android:layout_marginRight="30dp"
+        android:text="The total count is 11">
+
+    </TextView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#373434"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:text="From Past 7 Days">
+
+    </TextView>
+
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:background="@drawable/track_shape"
+    app:cardCornerRadius="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <!-- RUL -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="RUL "
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="normal">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/rul"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="rul"
+                            android:textColor="#CC000000"
+                            android:textSize="18dp"
+                            android:textStyle="normal">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <!-- LUL -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/black"
+                            android:text="LUL "
+                            android:textSize="18dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/lul"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLength="4"
+                            android:text="lul"
+                            android:textColor="#CC000000"
+                            android:textSize="18dp"
+                            android:textStyle="normal">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <!-- RLL -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="RLL "
+                            android:textColor="@color/black"
+                            android:textSize="18dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/rll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLength="4"
+                            android:text="rll"
+                            android:textColor="#CC000000"
+                            android:textSize="18dp"
+                            android:textStyle="normal">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <!-- LLL -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="LLL "
+                            android:textColor="@color/black"
+                            android:textSize="18dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/lll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLength="4"
+                            android:text="lll"
+                            android:textColor="#CC000000"
+                            android:textSize="18dp"
+                            android:textStyle="normal">
+
+                        </TextView>
+
+                    </LinearLayout>
+                </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

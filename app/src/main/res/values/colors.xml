@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#ED315E</color>
+    <color name="lightred">#CCED315E</color>
+    <color name="checkbox_checked_color">#FF0000</color>
+    <color name="checkbox_unchecked_color">#FFFFFF</color>
+
+</resources>

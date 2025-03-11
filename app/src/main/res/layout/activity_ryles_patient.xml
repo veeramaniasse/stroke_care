@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentLayout"
+    android:orientation="vertical"
+    tools:context="com.simats.strokecare.foleys_patient">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/p_d_doc_shape">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=" Foleys and Ryles"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/foleys"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ryles"
+            android:text="Foleys"
+            android:textColor="@color/black"
+            >
+
+        </Button>
+        <Button
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/foleys"
+            android:text="Ryles"
+            android:textColor="@color/black"
+            >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/searchview"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:hint="Search by Day, Month, or Year"
+            android:background="@drawable/search_bar"
+            android:padding="10dp"
+            android:textSize="16sp">
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noRecordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="No records found."
+        android:visibility="gone"
+        android:textColor="@color/lightred"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

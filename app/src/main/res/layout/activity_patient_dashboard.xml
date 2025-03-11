@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dl"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:openDrawer="start"
+    tools:context="com.simats.strokecare.patient_dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/lightred">
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Home "
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+<!--        <TextView-->
+<!--            android:id="@+id/notificationTextView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Notification Text"-->
+<!--            android:visibility="visible"/>-->
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/physio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/patient_dash_shape"
+            android:text="1. Physiotherapy"
+            android:textAllCaps="false"
+            android:textColor="#CC000000"
+            android:textStyle="normal"
+            android:textSize="18dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bed_change_positions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/patient_dash_shape"
+            android:text="2. Bed Change Positions"
+            android:textAllCaps="false"
+            android:textColor="#CC000000"
+            android:textStyle="normal"
+            android:textSize="18dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bed_sores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/patient_dash_shape"
+            android:text="3. Bed Sores"
+            android:textAllCaps="false"
+            android:textColor="#CC000000"
+            android:textStyle="normal"
+            android:textSize="18dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/feeds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/patient_dash_shape"
+            android:text="4. Feeds"
+            android:textAllCaps="false"
+            android:textColor="#CC000000"
+            android:textStyle="normal"
+            android:textSize="18dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/foleys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/patient_dash_shape"
+            android:text="5. Foleys and Ryles"
+            android:textAllCaps="false"
+            android:textColor="#CC000000"
+            android:textStyle="normal"
+            android:textSize="18dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:id="@+id/navigationView"
+        app:headerLayout="@layout/main_header_doc"
+        app:menu="@menu/patient_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

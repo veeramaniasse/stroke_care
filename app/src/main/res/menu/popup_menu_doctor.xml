@@ -1,0 +1,64 @@
+ <!-- res/menu/menu_doctor.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/more"
+        android:icon="@drawable/baseline_more_vert_24"
+        android:title="@string/Todo">
+
+        <menu>
+            <item android:id="@+id/id1"
+                android:title="@string/patient_performance"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                >
+
+            </item>
+            <item android:id="@+id/id2"
+                android:title="@string/monitoring_physiotherapy"
+                android:orderInCategory="100"
+                app:showAsAction="never">
+
+            </item>
+            <item android:id="@+id/id3"
+                android:title="@string/monitoring_position"
+                android:orderInCategory="100"
+                app:showAsAction="never">
+
+            </item>
+            <item android:id="@+id/id4"
+                android:title="@string/monitoring_bed_sores"
+                android:orderInCategory="100"
+                app:showAsAction="never">
+
+            </item>
+            <item android:id="@+id/id5"
+                android:title="@string/foleys_and_ryles"
+                android:orderInCategory="100"
+                app:showAsAction="never">
+
+            </item>
+            <item android:id="@+id/id7"
+                android:title="Track Patient"
+                android:orderInCategory="100"
+                app:showAsAction="never">
+
+            </item>
+            <item android:id="@+id/id6"
+                android:title="Patient Status"
+                android:orderInCategory="100"
+                app:showAsAction="never">
+
+            </item>
+            <item android:id="@+id/id8"
+                android:title="MRI"
+                android:orderInCategory="100"
+                app:showAsAction="never">
+
+            </item>
+
+        </menu>
+    </item>
+</menu>

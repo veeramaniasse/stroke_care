@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parentLayout"
+    tools:context="com.simats.strokecare.Patient_status">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb1"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/lightred">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient Status"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="History"
+        android:layout_gravity="end"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_history_shape"
+        android:layout_marginTop="30dp"
+        >
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Power"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp">
+    </TextView>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Power"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/layout_shape"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <!-- RUL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="RUL :"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="normal">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/rul"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_shape"
+                android:layout_marginLeft="20dp">
+
+            </EditText>
+        </LinearLayout>
+
+        <!-- LUL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="LUL :"
+                android:textColor="@color/black"
+                android:textSize="18dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/lul"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:maxLength="4">
+
+            </EditText>
+        </LinearLayout>
+
+        <!-- RLL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="RLL : "
+                android:textSize="18dp"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/rll"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp"
+                android:layout_marginLeft="15dp"
+                android:maxLength="4">
+
+            </EditText>
+        </LinearLayout>
+
+        <!-- LLL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="LLL :"
+                android:textSize="18dp"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/lll"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:maxLength="4">
+
+            </EditText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/done"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        android:background="@drawable/save_shape"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp">
+    </Button>
+
+</LinearLayout>

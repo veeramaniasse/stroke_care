@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Stroke Care</string>
+    <string name="patient_performance">Patient Performance</string>
+    <string name="monitoring_physiotherapy">Monitoring Physiotherapy</string>
+    <string name="monitoring_position">Monitoring Position</string>
+    <string name="foleys_and_ryles">Foleys and Ryles</string>
+    <string name="monitoring_bed_sores">Monitoring Bed sores</string>
+    <string name="Todo">Todo</string>
+    <string name="OpenDrawer">Open navigation drawer</string>
+    <string name="CloseDrawer">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="spinner_date">
+        <item>Choose Date</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+        <!-- Add more items as needed -->
+    </string-array>
+
+</resources>

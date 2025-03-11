@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.simats.strokecare.Patient_status_history">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb1"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/lightred">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Previous Patient Status"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Power"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="normal">
+
+        </TextView>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="80dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            &lt;!&ndash; RUL &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:text="RUL "-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="normal">-->
+
+<!--                </TextView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/rul"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:fontFamily="sans-serif-medium"-->
+<!--                    android:text="rul"-->
+<!--                    android:textColor="#CC000000"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="normal">-->
+
+<!--                </TextView>-->
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash; LUL &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:text="LUL "-->
+<!--                    android:textSize="18dp">-->
+
+<!--                </TextView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/lul"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:fontFamily="sans-serif-medium"-->
+<!--                    android:maxLength="4"-->
+<!--                    android:text="lul"-->
+<!--                    android:textColor="#CC000000"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="normal">-->
+
+<!--                </TextView>-->
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash; RLL &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:text="RLL "-->
+<!--                    android:textSize="18dp">-->
+
+<!--                </TextView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/rll"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:fontFamily="sans-serif-medium"-->
+<!--                    android:maxLength="4"-->
+<!--                    android:text="rll"-->
+<!--                    android:textColor="#CC000000"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="normal">-->
+
+<!--                </TextView>-->
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash; LLL &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:text="LLL "-->
+<!--                    android:textSize="18dp">-->
+
+<!--                </TextView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/lll"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:fontFamily="sans-serif-medium"-->
+<!--                    android:maxLength="4"-->
+<!--                    android:text="lll"-->
+<!--                    android:textColor="#CC000000"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="normal">-->
+
+<!--                </TextView>-->
+
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+    </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/rc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+<!--    <Button-->
+<!--        android:id="@+id/done"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginBottom="100dp"-->
+<!--        android:background="@drawable/save_shape"-->
+<!--        android:text="Done"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="normal" />-->
+
+</LinearLayout>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"
+        tools:ignore="ProtectedPermissions" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_icon"
+        android:label="Stroke Care"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Remainderapp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="34">
+        <activity
+            android:name="com.simats.strokecare.d_profile_edit"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.notification"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.simats.strokecare.BackgroundNotificationService"
+            android:enabled="true"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.simats.strokecare.patient_details_edit_doc"
+            android:exported="false"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.danesh"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.ryles_doc"
+            android:exported="false"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.track_patient"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.ryles_patient"
+            android:exported="false"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.foleys_patient"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.feeds_patient"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.b_s_doc_record"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.notification_pat"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.monitoring_b_s_doc"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.b_p_doc_record"
+            android:exported="false"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.monitoring_b_p_doc"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.b_p_patient_rec"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.monitoring_physio_rec_doc"
+            android:exported="false"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.physio_rec_patient"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.weast"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.add_patient_status"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.ryles"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.plogin"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.Patient_status_history"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.Patient_profile"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.d_login"
+            android:exported="false"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.Patient_status"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.doctor_profile"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.MRI_Reports"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.new_password_doc"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.content_layout"
+            android:exported="false"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.add_patient"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.foleys"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.bed_sores_history"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.bed_sores_patient"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.feeds_history"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.feeds"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.bed_change_positions_overall_history"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.bed_change_positions"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.overall_history"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.patient_physio"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.patient_dashboard"
+            android:exported="false"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.d_dashboard"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.bed_sores"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.Foleys_and_Ryles_doc"
+            android:exported="false"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.monitouring_physiotherephy"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.patient_performance"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.patient_details_doctor"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.simats.strokecare.Splashscreen"
+            android:exported="true"
+
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.simats.strokecare.MainActivity"
+            android:exported="true"
+
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

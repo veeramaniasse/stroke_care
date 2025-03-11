@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentLayout"
+    android:orientation="vertical"
+    tools:context=".add_patient_status">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb1"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/lightred">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Patient Status"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Power"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/layout_shape"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        >
+
+        <!-- RUL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RUL "
+                android:textColor="#CC000000"
+                android:textSize="18dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/rul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:maxLength="1"
+                android:textSize="16dp"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp">
+            </EditText>
+        </LinearLayout>
+
+        <!-- LUL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LUL "
+                android:textSize="18dp"
+                android:textColor="#CC000000"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/lul"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textStyle="normal"
+                android:maxLength="1"
+                android:textSize="16dp"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp">
+            </EditText>
+        </LinearLayout>
+
+        <!-- RLL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RLL "
+                android:textSize="18dp"
+                android:textColor="#CC000000"
+                android:layout_marginLeft="20dp">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/rll"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textStyle="normal"
+                android:maxLength="1"
+                android:textSize="16dp"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp">
+            </EditText>
+        </LinearLayout>
+
+        <!-- LLL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LLL "
+                android:textSize="18dp"
+                android:textColor="#CC000000"
+                android:layout_marginLeft="20dp">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/lll"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textStyle="normal"
+                android:maxLength="1"
+                android:textSize="16dp"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp">
+            </EditText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MRI"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/mri"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_add_24"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="#C5BDBD"
+        >
+    </ImageView>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/done"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        android:background="@drawable/save_shape"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp">
+    </Button>
+
+</LinearLayout>
