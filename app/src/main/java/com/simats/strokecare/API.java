@@ -1,7 +1,7 @@
 package com.simats.strokecare;
 
 public class API {
-public static final String BASE_URL = "http://180.235.121.245/strokecare/";
+    public static final String BASE_URL = "http://180.235.121.245/strokecare/";
 //    public static final String BASE_URL = "http://192.168.13.101/php/";
     public static final String DOCTOR_LOGIN_URL = BASE_URL + "dlogin.php";
     public static final String D_Dashboard_URL = BASE_URL + "plist.php";
